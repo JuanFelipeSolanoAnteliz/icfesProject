@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo{
+    width: 20vw;
+    max-width: 200px;
+    height: 90px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+h1 {
+    color: #0066cc; /* Blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.question {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: justify;
+}
+.imageComplement{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.imageComplement img{
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+.option {
+    display: flex;
+    align-items: center;
+    background-color: #ffd700; /* Yellow */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.option:hover {
+    background-color: #ffec8b; /* Lighter yellow on hover */
+}
+.option-letter {
+    background-color: #0f72d6; /* Blue */
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.option-text {
+    flex-grow: 1;
+    width: 60vw;
+    max-width: 400px;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+.submit-btn {
+    background-color: #0066cc; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #cc0000; /* Red */
+}
+
+@media (max-width: 600px) {
+
+    .logo img{
+        width: 100%;
+    }
+    
+    .quiz-container {
+        background-color: white;
+        margin-top: 10vh;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+    }    
+}

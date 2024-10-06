@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/js/modules/main.js" defer></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="/storage/img/logo-yondo.png" alt="">
+    </div>
+    <div class="quiz-container">
+        <h1>Matematicas</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="question1">1. A continuación se muestran los resultados de una encuesta que indagó sobre el parque automotor del transporte intermunicipal en Colombia.</label>
+            </div>
+            <div class="imageComplement">
+                <img src="storage/img/image.png" alt="">
+            </div>
+            <div class="options">
+                <label class="option" for="q1a">
+                    <input type="radio" id="q1a" name="question1" value="a" required>
+                    <span class="option-letter">A</span>
+                    <span class="option-text">la mayor parte del parque automotor son automóviles, camionetas y camperos.</span>
+                </label>
+                <label class="option" for="q1b">
+                    <input type="radio" id="q1b" name="question1" value="b">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">la mitad del parque automotor corresponde a automóviles, camionetas y camperos.</span>
+                </label>
+                <label class="option" for="q1c">
+                    <input type="radio" id="q1c" name="question1" value="c">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">la mayor parte del parque automotor son buses, microbuses y busetas.</span>
+                </label>
+                <label class="option" for="q1d">
+                    <input type="radio" id="q1d" name="question1" value="d">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">la mitad del parque automotor corresponde a buses, microbuses y busetas.</span>
+                </label>
+            </div>
+            <button type="submit" class="submit-btn">Enviar respuesta</button>
+        </form>
+        <div class="result"></div>
+    </div>
+</body>
+</html>
